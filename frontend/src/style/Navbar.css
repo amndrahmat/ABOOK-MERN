@@ -8,7 +8,6 @@ nav {
   align-items: center;
   background-color: #55008C;
   color: white;
-  position: sticky;
   top: 0;
 }
 
@@ -60,7 +59,7 @@ nav .menu span {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   nav .menu {
       display: flex;
   }
