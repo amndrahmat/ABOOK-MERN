@@ -59,7 +59,7 @@ const createBook = async (req, res) => {
       author,
       description,
     });
-    res.status(200).json({ success: true });
+    res.status(200).json(book);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -94,7 +94,7 @@ const updateBook = async (req, res) => {
     return res.status(404).json({ error: "No such book" });
   }
 
-  res.status(200).json({ success: true, ...req.body });
+  res.status(200).json(book);
 };
 
 module.exports = {
